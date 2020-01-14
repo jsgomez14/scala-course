@@ -17,22 +17,21 @@ object OOBasics extends App {
   val counter = new Counter
   counter.increment.increment.print
   counter.increment(12).print
-}
 
-// Constructor, add "val" to convert paramaters to "fields" (attributes)
-// Class parameters are NOT FIELDS
-class Person(name: String, val age: Int) {
-  //body
-  val x = 2
-  //method
-  def greet(name: String): Unit =  println(s"${this.name} says: Hi, $name")
+  // Constructor, add "val" to convert paramaters to "fields" (attributes)
+  // Class parameters are NOT FIELDS
+  class Person(name: String, val age: Int) {
+    //body
+    val x = 2
+    //method
+    def greet(name: String): Unit =  println(s"${this.name} says: Hi, $name")
 
-  //Overloading: many method different parameters.
-  def greet(): Unit = println(s"Hi, I am $name")
+    //Overloading: many method different parameters.
+    def greet(): Unit = println(s"Hi, I am $name")
 
-  //multiple constrctors
-  def this(name: String) = this(name, 0)
-}
+    //multiple constrctors
+    def this(name: String) = this(name, 0)
+  }
 
   /*
   Novel and a Writer
@@ -81,3 +80,6 @@ class Person(name: String, val age: Int) {
 
     def print = println(count)
   }
+}
+
+
