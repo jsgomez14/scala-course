@@ -32,6 +32,7 @@ class Cons[+A](f: A, t: MyGenericList[A]) extends MyGenericList[A] {
     else f + " " + t.printElements
 }
 
+//Not working properly
 object MyGenericListTest extends App {
   val listOfIntegers: MyGenericList[Int] = new Cons(1, new Cons(2, new Cons(3, Empty)))
   //val listOfStrings = new Cons("1", new Cons("2", Empty))
