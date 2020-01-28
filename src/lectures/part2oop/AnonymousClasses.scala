@@ -34,8 +34,8 @@ object AnonymousClasses extends App {
     def itPasses(value: T)
   }
 
-  trait MyTransformer[A, B] {
+  /*trait MyTransformer[A, B] {
     def transform(value: A): B = new B
-  }
+  }*/
 
 }
