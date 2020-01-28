@@ -30,4 +30,12 @@ object AnonymousClasses extends App {
     override def sayHi: Unit = println("Hi, my name is Jim")
   }
 
+  trait MyPredicate[T]{
+    def itPasses(value: T)
+  }
+
+  trait MyTransformer[A, B] {
+    def transform(value: A): B = new B
+  }
+
 }
