@@ -40,8 +40,10 @@ object WhatsAFunction extends App {
   println(adder3(4))
   println(superAdder(3)(4)) //Curried function
   // Higher order functions, they either receive functions as parameters or return other functions as result
+
+  trait MyFunction[A, B] {
+    def apply(element: A): B
+  }
 }
 
-trait MyFunction[A, B] {
-  def apply(element: A): B
-}
+
