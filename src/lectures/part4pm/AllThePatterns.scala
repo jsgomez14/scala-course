@@ -67,9 +67,9 @@ object AllThePatterns extends App {
   }
 
   // 8 - multi-patterns
-  val multipattern = aList match {
+/*  val multipattern = aList match {
     case Empty | Cons(0, _) => // compound pattern (multi-pattern)
-  }
+  }*/
 
   // 9 - if guards
   val secondElementSpecial = aList match {
